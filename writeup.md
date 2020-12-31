@@ -41,13 +41,13 @@ Images are converted into grayscale.
 
 5. For the Hough lines I applied the same techniques on the lesson to run the lines in the edge dtected image in step 4.  The parameters are rho = 1, theta = np.pi/180, threshold = 14, min_line_length = 40, max_line_gap = 20.
 
-![lines](test_images_output/solidWhiteRight_lines.jpg?raw=true "Lines"")
+![lines](test_images_output/solidWhiteRight_lines.jpg?raw=true "Lines")
 
 6. Draw straight lines using averages. I created a new function called '<draw_lines_average>' exaplined in the next section that produces extended lines from the maximum points in the area of interest. The parameters that worked better were thickness of 10. The color was left to [255, 0, 0].
 
 7. Finally ythe oupput lines are combined with the original images into one to produce the intended output.
 
-![processed](test_images_output/solidWhiteCurve_processed.jpg?raw=true "Straighg Lines"")
+![processed](test_images_output/solidWhiteCurve_processed.jpg?raw=true "Straight Lines")
 
 ### Single lines 
 
