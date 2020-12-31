@@ -20,7 +20,7 @@ The goals / steps of this project are the following:
 
 ### Initial Setup
 
-Additional helper functions were created to facilitate development and testing of the pipeline. Two functions were added to load all the images in the source folder. The function '<load_images_from_folder>' loads all the images in a folder and send them to an array of images. The function '<load_images_from_folder_w_name>' loads the same into a dictionary. This allows to load the filenames as well into the dictionary and use them to save processed files into an output directory. Files in the output directory are named with a postfix of '<_processed>'.
+Additional helper functions were created to facilitate development and testing of the pipeline. Two functions were added to load all the images in the source folder. The function `load_images_from_folder` loads all the images in a folder and send them to an array of images. The function `load_images_from_folder_w_name` loads the same into a dictionary. This allows to load the filenames as well into the dictionary and use them to save processed files into an output directory. Files in the output directory are named with a postfix of '<_processed>'.
 
 Loading all the files allows me to show all the images while processing steps in the pipeline. All images are displayed vertically.
 
@@ -41,13 +41,13 @@ Images are converted into grayscale.
 
 5. For the Hough lines I applied the same techniques on the lesson to run the lines in the edge dtected image in step 4.  The parameters are rho = 1, theta = np.pi/180, threshold = 14, min_line_length = 40, max_line_gap = 20.
 
-[image1]: ./test_images_output/solidWhiteRight_lines.jpg "Lines"
+![lines](test_images_output/solidWhiteRight_lines.jpg?raw=true "Lines"")
 
 6. Draw straight lines using averages. I created a new function called '<draw_lines_average>' exaplined in the next section that produces extended lines from the maximum points in the area of interest. The parameters that worked better were thickness of 10. The color was left to [255, 0, 0].
 
 7. Finally ythe oupput lines are combined with the original images into one to produce the intended output.
 
-[image2]: ./test_images_output/solidWhiteCurve_processed.jpg "Straighg Lines"
+![processed](test_images_output/solidWhiteCurve_processed.jpg?raw=true "Straighg Lines"")
 
 ### Single lines 
 
