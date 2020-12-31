@@ -28,9 +28,7 @@ Loading all the files allows me to show all the images while processing steps in
 
 The pipeline has seven steps described below. All parameters used in the pipeline functions and code lineas are in one block which makes easy to apply different values to see the results. In summary the help functions provided have been used and optimzied with different parameters. I was not able to use the hough_lines function so I made some changes in that step.
 
-1. Grayscale
-
-Images are converted into grayscale.
+1. Grayscale, Images are converted into grayscale.
 
 2. Gaussian Smoothing & Bluring, the helper function is used with the default value of kernel_size = 5, which seems to perform best.
 
